@@ -27,25 +27,27 @@ pip install pyDOE
 ## Options for solver
  The value depited is the default one.
  
- objective                 *Objective to be minimized*
+***objective: (REQUIRED)***           *Objective to be minimized*
  
- xo                        *initial point. It is not required*
+***xo***                      *initial point. It is not required*
+
+***bounds (REQUIRED)***       *Bounds for the decision variable*
  
- maxfun=20                 *Number of iterations*
+***maxfun=20***                 *Number of iterations*
  
- N_initial=4                *Number of initial points*
+***N_initial=4***                *Number of initial points*
  
-select_kernel='Matern52'    *Kernel for Gaussian process*
+***select_kernel='Matern52'***    *Kernel for Gaussian process*
 
-acquisition='LCB'           *Acquisition function*
+***acquisition='LCB'***           *Acquisition function*
 
-casadi=False                *Solve the problem via casadi and ipopt (this is used for constrained problems*
+***casadi=False***                *Solve the problem via casadi and ipopt (this is used for constrained problems*
 
-constraints = None          *No constraints by defaults*
+***constraints = None***          *No constraints by defaults*
 
-probabilistic=False         *To be implemented for probabilistic constraints*
+***probabilistic=False***        *To be implemented for probabilistic constraints*
 
-print_iteration=False       *Print iterations*
+***print_iteration=False***       *Print iterations*
 
 
 ## Example
